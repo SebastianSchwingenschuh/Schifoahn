@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    margin: 3rem;
+    background-image: url('Schneekanone.jpg'); /* Pfad zu deinem Bild */
+            background-size: cover; /* Deckt den gesamten Bildschirm ab */
+            background-position: center; /* Bild zentrieren */
+            margin: 0; /* Entfernt standardmäßigen Margin */
+            height: 100vh; /* Stellt sicher, dass der Körper die gesamte Höhe des Viewports einnimmt */
+}
+
+h3 {
+    padding-top: 2rem;
+    color: rgb(37, 37, 207);
+}
+
+p {
+    padding: 1rem;
+}
+
+section.style1 {
+    background-color: rgba(173, 216, 230, 0.25);
+    padding: 2rem;
+}
+
+p.references {
+    font-style: italic;
+    color: #3d3d3d;
+    font-size: 0.9em;
+}
+
+ul {
+    list-style: none; /* Entfernt die Standard-Bullets */
+    padding-left: 0; /* Entfernt das Padding */
+}
+
+li {
+    position: relative; /* Ermöglicht die Verwendung von Pseudoelementen */
+    padding-left: 25px; /* Platz für den benutzerdefinierten Bullet */
+}
+
+li::before {
+    content: '⛷'; /* Verwende einen Pfeil als Bullet */
+    position: absolute; /* Positionierung des Pseudoelements */
+    left: 0; /* Links vom Text */
+}
+
+
+/* link menü */
+
+
+body {
+    font-family: sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(37, 37, 207);
+    color: white;
+    padding: 0.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Zentriert die Menüelemente */
+}
+
+.navbar li::before {
+    content: ''; /* damit nicht der custom bullet point angezeigt wird */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: rgb(37, 37, 207);
+    background-color: white;
+}
+
+th {
+
+    background-color: rgb(37, 37, 207);
+    color: white;
+}
+
+.rankS{
+    width: 8.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+.rankA{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 69, 0, 0.8);
+}
+.rankB{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.8);
+}
+.rankC{
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.8);
+}
